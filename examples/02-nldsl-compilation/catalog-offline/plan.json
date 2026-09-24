@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1",
+  "name": "Bash + Python w jednym pliku",
+  "steps": [
+    {"id": "hello", "kind": "reuse", "uses": "urn:nl-dsl-sh:example:hello", "args": ["Tom"]},
+    {"id": "report", "kind": "generate", "language": "python", "needs": ["hello"],
+     "code": "import json\nprint(json.dumps({'status': 'ok', 'source': 'python'}))\n"}
+  ]
+}
