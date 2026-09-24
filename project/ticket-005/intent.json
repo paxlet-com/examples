@@ -1,0 +1,17 @@
+{
+  "schema": "new-project.intent/v3",
+  "ticket": "ticket-005",
+  "summary": "Import Taskand orchestration and complex autonomy scenarios",
+  "workstream": "application",
+  "classification": {
+    "kind": "SERVICE",
+    "priority": "P2",
+    "origin": "health"
+  },
+  "allowedPaths": ["project/ticket-005/**", "TODO.md", "project/TICKETS.md", "examples/03-taskand-orchestration/**", "examples/04-complex-scenarios/**", "examples/README.md", "tests/test_orchestration_and_complex.py"],
+  "forbiddenPaths": ["project/ticket-*/user-*.md"],
+  "stacks": [],
+  "dependsOn": [],
+  "conflictsWith": [],
+  "integrationTicket": null
+}

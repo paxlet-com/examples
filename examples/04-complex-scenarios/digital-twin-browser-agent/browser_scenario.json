@@ -1,0 +1,25 @@
+{
+  "action": "run",
+  "description": "Autonomous UI authentication and dashboard navigation journey",
+  "steps": [
+    {
+      "action": "goto",
+      "url": "https://example.com/"
+    },
+    {
+      "action": "assert",
+      "selector": "h1",
+      "visible": true
+    },
+    {
+      "action": "assert",
+      "selector": "p",
+      "visible": true
+    }
+  ],
+  "policy": {
+    "sandbox": "bubblewrap",
+    "network_isolation": true,
+    "ephemeral_profile": true
+  }
+}
