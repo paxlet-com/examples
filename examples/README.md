@@ -28,6 +28,7 @@ Wszystkie pakiety posiadają manifest `paxlet.json`, deklarację uprawnień i we
 - **`autonomous-devops-pipeline/`**: Wieloetapowy potok: inspekcja telemetrii systemu -> bramka jakościowa / detekcja anomalii -> synteza raportu z audytu -> hermetyzacja w Paxlet z kryptograficznym `receipt.json`.
 - **`multi-language-dag/`**: Heterogeniczny graf DAG łączący kroki w Bashu (przygotowanie danych) i Pythonie (analiza statystyczna) ze współdzieleniem stanu.
 - **`digital-twin-browser-agent/`**: Cyfrowy bliźniak agenta przeglądarkowego wykonujący asercje DOM, nawigację i interakcję w odizolowanym profilu.
+- **`cluster-gossip-replication/`**: Autonomiczna replikacja gossip w klastrze 3 węzłów Taskand: kompilacja planu w języku naturalnym do Paxleta, propagacja w tle bez zewnętrznego operatora, równoległe wykonanie w klastrze i agregacja potwierdzeń wykonania (`receipt.json`).
 
 ---
 
