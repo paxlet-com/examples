@@ -41,6 +41,7 @@
     "workstreams": {
       "application": {
         "ownedPaths": [
+          "examples/**",
           "src/**",
           "app/**",
           "lib/**",
