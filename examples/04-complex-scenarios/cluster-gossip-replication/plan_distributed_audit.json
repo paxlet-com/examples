@@ -1,0 +1,27 @@
+{
+  "intent": "Perform concurrent cluster node security and capacity audit across all active mesh nodes",
+  "plan_id": "plan-cluster-audit-20260924",
+  "steps": [
+    {
+      "step_id": "compile_paxlet",
+      "action": "paxlet.builder.PaxletBuilder",
+      "urn": "urn:paxlet:taskand.dev:cluster-node-audit:v1",
+      "target_runtime": "python3"
+    },
+    {
+      "step_id": "register_procedure",
+      "uri": "proc://taskand.dev/cluster/distributed-audit/v1",
+      "binding": "builtin"
+    },
+    {
+      "step_id": "gossip_replicate",
+      "protocol": "taskand.gossip/v1",
+      "mode": "autonomous_continuous"
+    },
+    {
+      "step_id": "execute_and_verify",
+      "concurrency": "parallel",
+      "collect_receipts": true
+    }
+  ]
+}
