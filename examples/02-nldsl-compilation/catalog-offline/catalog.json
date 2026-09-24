@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "scripts": [
+    {
+      "id": "urn:nl-dsl-sh:example:hello",
+      "version": "1.0.0",
+      "description": "Przywitanie / greeting. Argument 1: imię / name (optional).",
+      "language": "bash",
+      "entry": "hello.sh",
+      "files": {
+        "hello.sh": "#!/usr/bin/env bash\nset -euo pipefail\nprintf 'Witaj, %s!\\n' \"${1:-świecie}\"\n"
+      },
+      "aliases": [
+        "przywitaj się",
+        "say hello"
+      ],
+      "tags": [],
+      "cwd": "caller",
+      "sha256": "0d478739277e570abf55a9d5792c2d477fbf3be1010672b79030c20b59387e65"
+    }
+  ]
+}
